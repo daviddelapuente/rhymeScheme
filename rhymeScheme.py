@@ -53,37 +53,11 @@ def hasDigit(s):
             return True
     return False
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def rhyme_score(first_word,second_word):
     return getScore(first_word,second_word,possible_phones)
 
 def rhyme_scoreOPT(first_word, second_word):
     return getScore(first_word,second_word,possible_phones_OPT)
-
-
-
 
 #this function was inspired by word_similarity from https://github.com/kevin-brown/rhyme-detect
 def getScore(first_word, second_word,dicrtionaryFunction):
@@ -135,74 +109,6 @@ def getScore(first_word, second_word,dicrtionaryFunction):
     
     score1=first_score(c1,c2)
     return score1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 def word_similarity(first_word, second_word, start_phone=None, end_phone=None):
     first_phones = possible_phones(first_word)

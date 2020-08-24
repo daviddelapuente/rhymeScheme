@@ -58,9 +58,19 @@ def borderCasesTest():
     #this will fail because, hat is sufix of chat. but is not a phone sufix, and that is not implemented yet
     assert(rhyme_score("chat","hat")>0)
 
+def runTest4():
+    print("begin test 4")
+    print(rhyme_scoreOPT("commit","git"))
+    print(rhyme_scoreOPT("suffix","prefix"))
+    print(rhyme_scoreOPT("suffix","helix"))
+    print(rhyme_scoreOPT("suffix","phoenix"))
+    print(rhyme_scoreOPT("octopus","bus"))
+    print("end test 4")
+
 def runTests():
     runTests0()
     runTests1()
     runTests2()
     runTests3()
+    runTest4()
 runTests()
